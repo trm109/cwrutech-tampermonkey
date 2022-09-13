@@ -1,0 +1,23 @@
+To Implement:
+    Options between:
+        Pickup
+        Dropoff
+        IB
+        No-Change.
+    
+    Add autofill 0's in #
+
+    Issue Information:
+        PC
+            Hardware - Laptop
+            Software
+                Windows
+                Mac
+        Citrix
+
+        Network
+    
+    Equipment Info:
+        IB: - Time spent assisting - analyst - created by - traffic center.
+
+        Care Center: traffic center - laptop
