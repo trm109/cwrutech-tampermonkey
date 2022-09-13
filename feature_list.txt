@@ -1,11 +1,61 @@
 To Implement:
-    Options between:
-        Pickup
-        Dropoff
-        IB
-        No-Change.
-    
-    Add autofill 0's in #
+
+    Top Page:
+        Assign loaner (name):
+            0. Prompt user for loaner name.
+            1. Add Victoria Finnik to assignees;
+            2. Add loaner (& name) to comment and description.
+        
+        Option Buttons:
+            Pickup:
+                1. p0.Status = resolved.
+                2. pComment.quick-comments.select = System Picked up.
+                3. pIssue.source = KSL
+                ??check for loaner (in name)
+            Dropoff (hardware/Software):
+                1. p0.Status = acknowledged
+                2. Ask for hardware/Software
+                3a. Hardware: pIssue
+                    i. Category = Personal Computer.
+                    ii. type = PC Hardware
+                    iii. service = Laptop
+                    iv. activity = repair
+                3b. Software: pIssue
+                    i. Category = Personal Computer.
+                    ii. type = Software
+                    iii. Windows/Mac
+                    iv. activity = repair
+                4. pIssue.source = Walk up
+                5. pIssue.building = KSL
+
+                ??? Printing support?
+            IB (Wireless,Citrix,Software,Other): 
+                1. p0.status = resolved.
+                2. pEquip.adventure = IB
+                3. PEquip.time = 1-15
+                4. pEquip.analyst = other.
+                5. pEquip.ibao = $(created by)
+                6. pEquip.traffic = KSL
+                7. pIssue.source = walk up
+                a. WIRELESS:
+                    1. pIssue.category = Campus network
+                    2. pIssue.type = wireless network
+                    3. pIssue.service = wireless network service
+                    4. pIssue.activity = repair
+                    5. pIssue.building = KSL
+                b. CITRIX:
+                    1. pIssue.category = Personal Computer
+                    2. pIssue.type = Software
+                    3. pIssue.service = Citrix
+                    4. pIssue.activity = How to/training
+                    5. pIssue.building = KSL
+                c. Software:
+                    1. pIssue.category = Software Package
+                    2. pIssue.type = Software Center
+                    3. pIssue.activity = activate/setup/install
+                d. Other:
+                    1. leave alone.
+        Add autofill 0's in #
 
     Issue Information:
         PC
@@ -21,3 +71,7 @@ To Implement:
         IB: - Time spent assisting - analyst - created by - traffic center.
 
         Care Center: traffic center - laptop
+
+
+
+
